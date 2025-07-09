@@ -4,6 +4,7 @@ import { getCookies } from "$std/http/cookie.ts";
 type State = {
     email?: string;
     password?: string;
+    cartIds?:string;
 };
 
 export async function handler(
@@ -16,6 +17,7 @@ export async function handler(
     const cookies = getCookies(req.headers);
     ctx.state.email = cookies.email;
     ctx.state.password = cookies.password;
+    ctx.state.cartIds=cookies.cartIds;
     const email = cookies.email;
     const password=cookies.password;
     if(email && password){

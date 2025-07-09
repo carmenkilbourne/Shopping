@@ -4,28 +4,36 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
+import * as $_layout from "./routes/_layout.tsx";
 import * as $_middleware from "./routes/_middleware.ts";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $cart from "./routes/cart.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $pagPrincipal from "./routes/pagPrincipal.tsx";
 import * as $product_id_ from "./routes/product/[id].tsx";
+import * as $ButtonAddProduct from "./islands/ButtonAddProduct.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $Header from "./islands/Header.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
+    "./routes/_layout.tsx": $_layout,
     "./routes/_middleware.ts": $_middleware,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/cart.tsx": $cart,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
     "./routes/pagPrincipal.tsx": $pagPrincipal,
     "./routes/product/[id].tsx": $product_id_,
   },
   islands: {
+    "./islands/ButtonAddProduct.tsx": $ButtonAddProduct,
     "./islands/Counter.tsx": $Counter,
+    "./islands/Header.tsx": $Header,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
