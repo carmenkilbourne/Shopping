@@ -53,7 +53,7 @@ export default function LogIn(props:Prop) {
       <form method="post" class ="AddForm">
         <input type="email" name="email" value="" placeholder="email"/>
         <input type="password" name="password" value="" placeholder="password" />
-        <button type="submit">Subscribe</button>
+        <button type="submit">Log In</button>
           {valorCookie!=="" && <p>Acceso no garantizado</p> ||<h1>Acceso garantizado</h1>}
       </form>
     
