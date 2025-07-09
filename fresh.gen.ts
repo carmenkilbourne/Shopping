@@ -13,6 +13,7 @@ import * as $index from "./routes/index.tsx";
 import * as $pagPrincipal from "./routes/pagPrincipal.tsx";
 import * as $product_id_ from "./routes/product/[id].tsx";
 import * as $ButtonAddProduct from "./islands/ButtonAddProduct.tsx";
+import * as $ButtonProduct from "./islands/ButtonProduct.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $Header from "./islands/Header.tsx";
 import type { Manifest } from "$fresh/server.ts";
@@ -32,6 +33,7 @@ const manifest = {
   },
   islands: {
     "./islands/ButtonAddProduct.tsx": $ButtonAddProduct,
+    "./islands/ButtonProduct.tsx": $ButtonProduct,
     "./islands/Counter.tsx": $Counter,
     "./islands/Header.tsx": $Header,
   },
