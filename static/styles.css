@@ -1,15 +1,25 @@
 .AddForm {
-  max-width: 500px;
+  max-width: 400px;
   margin: auto;
+  width:100%;
   padding: 20px;
   display: grid;
-  gap: 20px;
   box-shadow: 0 2px 4px black;
   border-radius: 5px;
+  text-align: center;
+  h1 {
+    font-size: large;
+  }
+  p {
+    justify-self: start;
+  }
   input, button {
+    margin-top: 10px;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
+    background-color: #007bff;
+    color: white;
   }
   input {
     width: 95%;
@@ -21,9 +31,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  h1 {
-    align-self: center;
-  }
 }
 .productContainer {
   display: flex;
@@ -60,7 +67,7 @@
     font-size: medium;
     text-align: center;
   }
-  p{
+  p {
     text-align: center;
   }
 }
@@ -103,4 +110,9 @@ body {
     color: white;
     align-items: center;
   }
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

@@ -14,8 +14,10 @@ import * as $pagPrincipal from "./routes/pagPrincipal.tsx";
 import * as $product_id_ from "./routes/product/[id].tsx";
 import * as $ButtonAddProduct from "./islands/ButtonAddProduct.tsx";
 import * as $ButtonProduct from "./islands/ButtonProduct.tsx";
+import * as $CartViewer from "./islands/CartViewer.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $Header from "./islands/Header.tsx";
+import * as $ProductQuantity from "./islands/ProductQuantity.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -34,8 +36,10 @@ const manifest = {
   islands: {
     "./islands/ButtonAddProduct.tsx": $ButtonAddProduct,
     "./islands/ButtonProduct.tsx": $ButtonProduct,
+    "./islands/CartViewer.tsx": $CartViewer,
     "./islands/Counter.tsx": $Counter,
     "./islands/Header.tsx": $Header,
+    "./islands/ProductQuantity.tsx": $ProductQuantity,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

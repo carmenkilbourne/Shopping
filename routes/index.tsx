@@ -49,9 +49,11 @@ export default function LogIn(props:Prop) {
   const valorCookie = props.data;
   return (
     <div class="index">
-      <h1>Log In</h1>
       <form method="post" class ="AddForm">
+        <h1>Log In</h1>
+        <p>Email</p>
         <input type="email" name="email" value="" placeholder="email"/>
+        <p>password</p>
         <input type="password" name="password" value="" placeholder="password" />
         <button type="submit">Log In</button>
           {valorCookie!=="" && <p>Acceso no garantizado</p> ||<h1>Acceso garantizado</h1>}

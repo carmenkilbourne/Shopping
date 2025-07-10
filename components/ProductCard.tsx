@@ -1,6 +1,6 @@
 import { FunctionalComponent } from "preact/src/index.js";
 import { Producto } from "../types.ts";
-import ButtonAddProduct from "../islands/ButtonAddProduct.tsx";
+import ButtonProduct from "../islands/ButtonProduct.tsx";
 type Props ={
     producto:Producto;
 }
@@ -13,7 +13,7 @@ const ProductCard:FunctionalComponent<Props>=({producto})=>{
             <img src={producto.image} />
             <p>{producto.price}$</p>
             </a>
-            <ButtonAddProduct idNumber={producto.id}/>
+            <ButtonProduct idNumber={producto.id}/>
         </div>
     );
 };

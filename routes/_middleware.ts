@@ -5,6 +5,7 @@ type State = {
     email?: string;
     password?: string;
     cartIds?:string;
+    cartItems?:string;
 };
 
 export async function handler(
@@ -18,6 +19,7 @@ export async function handler(
     ctx.state.email = cookies.email;
     ctx.state.password = cookies.password;
     ctx.state.cartIds=cookies.cartIds;
+    ctx.state.cartItems = cookies.cartItems;
     const email = cookies.email;
     const password=cookies.password;
     if(email && password){
