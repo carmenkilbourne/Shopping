@@ -1,6 +1,6 @@
 # Credentials:
-email-c@gmail.com
-password
+email = c@gmail.com
+password = 123
 
 # Fresh project
 
