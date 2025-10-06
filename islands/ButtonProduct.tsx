@@ -60,7 +60,6 @@ const ButtonProduct = ({ idNumber }: Props) => {
 
   return (
     <div>
-      <p>Producto ID: {id}</p>
       <p>Cantidad: {quantity}</p>
       <button onClick={addOne}>Añadir</button>
       <button onClick={removeOne} disabled={quantity === 0}>

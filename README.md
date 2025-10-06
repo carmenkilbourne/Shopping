@@ -1,21 +1,30 @@
-# Credentials:
-email = c@gmail.com
-password = 123
+# 🛒 Shopping APP
 
-# Fresh project
+## 🚀 Features
+- 🔐 User login with cookies
+- 🛍️ Product catalog display
+- 🧺 Add to cart and view cart summary
+- 💾 Data persistence via cookies
+- 📱 Fully responsive design
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+### Login screen
+credentials:
+email: c@gmail.com
+passwor: 123
+![alt text](image.png)
 
-### Usage
+### Product Catalog
+![alt text](image-1.png)
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+### Shopping Cart 
+![alt text](image-2.png)
 
-Then start the project:
-
-```
+**Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/shopping-app.git
+   cd shopping-app
+   ```
+**Run the App**
+  ```bash
 deno task start
-```
-
-This will watch the project directory and restart as necessary.
-
+ ```

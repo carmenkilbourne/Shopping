@@ -1,30 +1,50 @@
-/* Responsive AddForm */
 .AddForm {
-  max-width: 90vw;
-  margin: auto;
+ background-color: #ffffff;
+  color: #1e293b;
   width: 100%;
-  padding: 2rem;
-  display: grid;
-  box-shadow: 0 2px 4px black;
-  border-radius: 5px;
-  text-align: center;
+  max-width: 400px;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  animation: fadeIn 0.5s ease;
 }
 .AddForm h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #0f172a;
 }
 .AddForm p {
-  justify-self: start;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0.5rem 0 0.2rem;
 }
-.AddForm input,
-.AddForm button {
-  margin-top: 1rem;
-  width: 100%;
-  padding: 0.75rem;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+.AddForm input{
+   width: 100%;
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #f8fafc;
+  color: #0f172a;
   font-size: 1rem;
+  transition: all 0.2s ease;
+}
+.AddForm button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
 .AddForm input {
   background-color: #fff;
@@ -32,16 +52,14 @@
   border: 1px solid #ccc;
 }
 
-/* Responsive index container */
 .index {
-  margin-top: 5vw;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding: 0 2vw;
+  padding: 4vw 2vw;
+  margin-top: 2rem; 
 }
-
-/* Responsive product container */
 .productContainer {
   display: flex;
   flex-direction: row;
@@ -50,7 +68,6 @@
   justify-content: center;
 }
 
-/* Responsive product card */
 .productCard {
   display: flex;
   background: white;
@@ -86,7 +103,6 @@
   text-align: center;
 }
 
-/* Responsive product details card */
 .productDetailsCard {
   display: flex;
   background: white;
@@ -111,7 +127,6 @@
   font-size: 1.2rem;
 }
 
-/* Responsive header */
 body {
   margin: 0;
 }
@@ -134,7 +149,6 @@ body {
   font-size: 1rem;
 }
 
-/* Responsive cart */
 .cart {
   display: flex;
   flex-direction: column;
@@ -142,7 +156,6 @@ body {
   padding: 2vw;
 }
 
-/* Media queries for mobile */
 @media (max-width: 600px) {
   .AddForm, .productCard, .productDetailsCard {
     max-width: 98vw;
