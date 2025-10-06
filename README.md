@@ -20,7 +20,7 @@ passwor: 123
 
 **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/shopping-app.git
+   git clone https://github.com/carmenkilbourne/Shopping.git
    cd shopping-app
    ```
 **Run the App**
