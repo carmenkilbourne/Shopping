@@ -1,10 +1,10 @@
-# 🛒 Shopping APP ( https://carmenkilbo-shopping-11.deno.dev/)
-## 🚀 Features
-- 🔐 User login with cookies
-- 🛍️ Product catalog display
-- 🧺 Add to cart and view cart summary
-- 💾 Data persistence via cookies
-- 📱 Fully responsive design
+#  Shopping APP ( https://carmenkilbo-shopping-11.deno.dev/)
+##  Features
+-  User login with cookies
+-  Product catalog display
+-  Add to cart and view cart summary
+-  Data persistence via cookies
+-  Fully responsive design
 
 ### Login screen
 credentials:
